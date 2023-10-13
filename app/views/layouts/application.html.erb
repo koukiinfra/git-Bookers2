@@ -25,43 +25,43 @@
               <% if user_signed_in? %>
                 <li>
                   <%= link_to(user_path(current_user.id), class: 'nav-link text-light') do %>
-                    <strong><i class="fa-solid fa-home"></i><span>Home</span></strong>
+                    <strong><i class="fas fa-home"></i><span>Home</span></strong>
                   <% end %>
                 </li>
                 <li>
                   <%= link_to(users_path, class: 'nav-link text-light') do %>
-                    <strong><i class="fa-solid fa-users"></i><span>Users</span></strong>
+                    <strong><i class="fas fa-users"></i><span>Users</span></strong>
                   <% end %>
                 </li>
                 <li>
                   <%= link_to(books_path, class: 'nav-link text-light') do %>
-                    <strong><i class="fa-solid fa-book-open"></i><span>Books</span></strong>
+                    <strong><i class="fas fa-book-open"></i><span>Books</span></strong>
                   <% end %>
                 </li>
                 <li>
                   <%= link_to(destroy_user_session_path, method: :delete, class: 'nav-link text-light') do %>
-                    <strong><i class="fa-solid fa-sign-out-alt"></i><span>Log out</span></strong>
+                    <strong><i class="fas fa-sign-out-alt"></i><span>Log out</span></strong>
                   <% end %>
                 </li>
               <% else %>
                 <li>
                   <%= link_to(root_path, class: 'nav-link text-light') do %>
-                    <strong><i class="fa-solid fa-home"></i><span>Home</span></strong>
+                    <strong><i class="fas fa-home"></i><span>Home</span></strong>
                   <% end %>
                 </li>
                 <li>
                   <%= link_to(about_path ,class: "nav-link text-light") do %>
-                    <strong><i class="fa-solid fa-link"></i><span>About</span></strong>
+                    <strong><i class="fas fa-link"></i><span>About</span></strong>
                   <% end %>
                 </li>
                 <li>
                   <%= link_to(new_user_registration_path, class: "nav-link text-light") do %>
-                    <strong><i class="fa-solid fa-user-plus"></i><span>Sign up</span></strong>
+                    <strong><i class="fas fa-user-plus"></i><span>Sign up</span></strong>
                   <% end %>
                 </li>
                 <li>
                   <%= link_to(new_user_session_path, class: "nav-link text-light") do %>
-                    <strong><i class="fa-solid fa-sign-in-alt"></i><span>Log in</span></strong>
+                    <strong><i class="fas fa-sign-in-alt"></i><span>Log in</span></strong>
                   <% end %>
                 </li>
               <% end %>
